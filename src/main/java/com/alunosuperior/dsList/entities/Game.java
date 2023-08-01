@@ -1,6 +1,6 @@
 package com.alunosuperior.dsList.entities;
 
-import java.util.Objects;
+import java.util.Objects; 
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -27,7 +27,7 @@ public class Game {
 	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	@Column(columnDefinition = "TEXT")
-	private String longDescription;
+	private String longDescription;  
 
 	public Game() {
 
