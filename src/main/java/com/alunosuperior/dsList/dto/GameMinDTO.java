@@ -1,6 +1,7 @@
 package com.alunosuperior.dsList.dto;
 
 import com.alunosuperior.dsList.entities.Game;
+import com.alunosuperior.dsList.projections.GameMinProjection;
 
 public class GameMinDTO {
 
@@ -21,6 +22,17 @@ public class GameMinDTO {
 		imgUrl = entity.getImgUrl();
 		shortDescription = entity.getLongDescription();
 	}
+	
+	
+	public GameMinDTO(GameMinProjection projection ) {
+		id = projection.getId();
+		title = projection.getTitle();
+		score = projection.getScore();
+		imgUrl = projection.getImgUrl();
+		shortDescription = projection.getShortDescription();
+	}
+	
+	
 
 	public Long getId() {
 		return id;
